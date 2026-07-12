@@ -2,33 +2,30 @@
 <html lang="id">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>JAVAS INDO — Konsultan Lingkungan Profesional</title>
-  <meta name="description" content="CV. JAVAS INDONESIA KONSULTAN — Solusi Profesional untuk Lingkungan yang Berkelanjutan. Layanan: AMDAL, UKL-UPL, Laboratorium, GIS, Drone Mapping, ESG, dan lainnya.">
-  <meta name="keywords" content="konsultan lingkungan, AMDAL, UKL-UPL, laboratorium lingkungan, GIS, drone mapping, ESG, pengelolaan limbah">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>JAVAS INDO — Konsultan Lingkungan, Perizinan, dan Keberlanjutan</title>
+  <meta name="description" content="CV. JAVAS INDONESIA KONSULTAN — Solusi Profesional untuk Lingkungan yang Berkelanjutan. Layanan: AMDAL, OSS-RBA, Laboratorium, GIS, Audit, ESG, dan lainnya.">
+  <meta name="robots" content="index,follow">
+  <meta name="theme-color" content="#2E7D32">
 
   <!-- Open Graph -->
-  <meta property="og:site_name" content="JAVAS INDO">
-  <meta property="og:title" content="CV. JAVAS INDONESIA KONSULTAN">
-  <meta property="og:description" content="Solusi Profesional untuk Lingkungan yang Berkelanjutan">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="/">
-  <meta property="og:image" content="/assets/images/og-image.jpg">
+  <meta property="og:title" content="CV. JAVAS INDONESIA KONSULTAN" />
+  <meta property="og:description" content="Solusi Profesional untuk Lingkungan yang Berkelanjutan" />
+  <meta property="og:image" content="/assets/images/og-image.jpg" />
+  <meta property="og:type" content="website" />
 
   <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="CV. JAVAS INDONESIA KONSULTAN">
-  <meta name="twitter:description" content="Solusi Profesional untuk Lingkungan yang Berkelanjutan">
+  <meta name="twitter:card" content="summary_large_image" />
 
   <!-- Schema.org Organization -->
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "CV. JAVAS INDONESIA KONSULTAN",
-    "url": "https://javasindo-ai.github.io/",
-    "logo": "https://javasindo-ai.github.io/assets/images/logo.png",
-    "contactPoint": [{"@type":"ContactPoint","telephone":"+62 878-7783-6080","contactType":"customer service","areaServed":"ID"}]
+    "@context":"https://schema.org",
+    "@type":"Organization",
+    "name":"CV. JAVAS INDONESIA KONSULTAN",
+    "url":"https://javasindo-ai.github.io/",
+    "logo":"https://javasindo-ai.github.io/assets/images/logo.png",
+    "contactPoint":[{"@type":"ContactPoint","telephone":"+62 878-7783-6080","contactType":"customer service","areaServed":"ID"}]
   }
   </script>
 
@@ -41,161 +38,221 @@
   <link rel="icon" href="/favicon.ico">
 </head>
 <body>
-  <!-- Loading screen -->
-  <div id="loading-screen" class="loading-screen">Loading…</div>
+  <!-- Loading Screen -->
+  <div id="loading-screen" class="loading-screen" role="status" aria-live="polite">Memuat…</div>
 
-  <!-- NAVBAR -->
+  <!-- NAVIGATION -->
   <nav id="mainNav" class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
     <div class="container">
       <a class="navbar-brand d-flex align-items-center" href="/">
         <img src="/assets/images/logo.png" alt="JAVAS INDO" width="44" height="44" class="me-2">
-        <span class="fw-bold">JAVAS INDO</span>
+        <div>
+          <div class="fw-bold">JAVAS INDO</div>
+          <small class="text-muted">Konsultan Lingkungan & Keberlanjutan</small>
+        </div>
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navMenu">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item"><a class="nav-link" href="/">Beranda</a></li>
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="#home">Beranda</a></li>
           <li class="nav-item"><a class="nav-link" href="/tentang.html">Tentang Kami</a></li>
-          <li class="nav-item"><a class="nav-link" href="/layanan.html">Layanan</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Layanan</a></li>
           <li class="nav-item"><a class="nav-link" href="/portofolio.html">Portofolio</a></li>
           <li class="nav-item"><a class="nav-link" href="/artikel.html">Artikel</a></li>
           <li class="nav-item"><a class="nav-link" href="/regulasi.html">Regulasi</a></li>
           <li class="nav-item"><a class="nav-link" href="/karier.html">Karier</a></li>
           <li class="nav-item"><a class="nav-link" href="/kontak.html">Hubungi Kami</a></li>
-          <li class="nav-item ms-2"><button id="darkToggle" class="btn btn-outline-secondary btn-sm">Dark</button></li>
+          <li class="nav-item ms-2"><button id="darkToggle" class="btn btn-outline-secondary btn-sm" aria-pressed="false">Dark</button></li>
         </ul>
       </div>
     </div>
   </nav>
 
   <!-- HERO -->
-  <header class="hero-section text-white">
+  <header id="home" class="hero-section text-white" role="banner">
     <div class="hero-overlay"></div>
-    <video class="hero-video" autoplay muted loop playsinline poster="/assets/images/hero.jpg">
-      <source src="/assets/images/hero-loop.mp4" type="video/mp4">
-    </video>
+    <picture>
+      <source srcset="/assets/images/hero.jpg" media="(min-width: 768px)">
+      <img src="/assets/images/hero.jpg" alt="Ilustrasi lingkungan - hutan dan energi terbarukan" class="w-100" style="object-fit:cover;height:60vh;filter:brightness(.55)" loading="lazy">
+    </picture>
     <div class="container position-relative" data-aos="fade-up">
       <div class="row align-items-center" style="min-height:60vh">
         <div class="col-lg-7">
-          <h1 class="display-5 fw-bold">Konsultan Lingkungan Profesional untuk Solusi Berkelanjutan</h1>
-          <p class="lead">Kami membantu pemerintah, perusahaan, industri, rumah sakit, hotel, dan UMKM dalam penyusunan dokumen lingkungan, perizinan, audit, laboratorium, GIS, ESG, serta konsultasi teknis.</p>
+          <h1 class="display-5 fw-bold">Konsultan Lingkungan, Perizinan, dan Keberlanjutan</h1>
+          <p class="lead">Solusi Profesional untuk Lingkungan yang Berkelanjutan. Kami membantu pemerintah, perusahaan, dan UMKM dalam penyusunan dokumen lingkungan, perizinan, audit, laboratorium, GIS, dan program ESG.</p>
           <div class="mt-4">
-            <a class="btn btn-success btn-lg me-2" href="#contact">✔ Konsultasi Sekarang</a>
-            <a class="btn btn-outline-light btn-lg" href="/layanan.html">✔ Lihat Layanan</a>
+            <a class="btn btn-success btn-lg me-2" href="/kontak.html">✔ Konsultasi Sekarang</a>
+            <a class="btn btn-outline-light btn-lg" href="#services">✔ Lihat Layanan</a>
           </div>
+          <div class="mt-3 text-muted small">Kontak: <a href="tel:+6287877836080" class="text-white">+62 878-7783-6080</a></div>
         </div>
-        <div class="col-lg-5 d-none d-lg-block">
-          <img src="/assets/images/hero-illustration.png" alt="Ilustrasi" class="img-fluid">
+        <div class="col-lg-5 d-none d-lg-block text-end">
+          <img src="/assets/images/hero-illustration.png" alt="Ilustrasi layanan" class="img-fluid rounded shadow-lg" style="max-height:360px;">
         </div>
       </div>
     </div>
   </header>
 
-  <!-- ABOUT -->
-  <section class="py-5">
+  <!-- SERVICES -->
+  <section id="services" class="py-5">
     <div class="container" data-aos="fade-up">
-      <div class="row">
-        <div class="col-lg-6">
-          <h2>Tentang Kami</h2>
-          <p>CV. JAVAS INDONESIA KONSULTAN merupakan perusahaan jasa konsultansi lingkungan yang menyediakan layanan penyusunan dokumen lingkungan, perizinan, kajian teknis, pemetaan GIS, laboratorium lingkungan, audit, serta pendampingan keberlanjutan (ESG). Kami berkomitmen memberikan solusi profesional, cepat, akurat, dan sesuai regulasi nasional.</p>
-          <ul>
-            <li><strong>Visi:</strong> Menjadi perusahaan konsultan lingkungan terpercaya di Indonesia.</li>
-            <li><strong>Misi:</strong> Memberikan layanan profesional, Menjaga kualitas lingkungan, Mendukung pembangunan berkelanjutan, Mengutamakan kepuasan klien.</li>
-          </ul>
-        </div>
-        <div class="col-lg-6">
-          <div class="row g-3">
-            <div class="col-6"><img loading="lazy" src="/assets/images/about-1.jpg" alt="about" class="img-fluid rounded"></div>
-            <div class="col-6"><img loading="lazy" src="/assets/images/about-2.jpg" alt="about" class="img-fluid rounded"></div>
-            <div class="col-12 mt-3">
-              <a href="/tentang.html" class="btn btn-outline-primary">Lebih Lanjut</a>
+      <div class="text-center mb-4">
+        <h2 class="fw-bold">Layanan Kami</h2>
+        <p class="text-muted">Solusi lengkap untuk kebutuhan lingkungan, perizinan, dan keberlanjutan.</p>
+      </div>
+
+      <div class="row g-3">
+        <!-- Service Cards: group services into columns -->
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="50">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <div class="mb-3"><i class="fa-solid fa-file-lines fa-2x text-success"></i></div>
+              <h5>Dokumen Persetujuan Lingkungan</h5>
+              <ul class="small mb-0">
+                <li>AMDAL, UKL‑UPL, SPPL</li>
+                <li>DELH, DPLH, Persetujuan Teknis</li>
+              </ul>
             </div>
           </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="80">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <div class="mb-3"><i class="fa-solid fa-clipboard-list fa-2x text-primary"></i></div>
+              <h5>Perizinan Berusaha Berbasis Risiko</h5>
+              <ul class="small mb-0">
+                <li>OSS‑RBA, NIB, Sinkronisasi Perizinan</li>
+                <li>Perizinan sektor lingkungan</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="110">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <div class="mb-3"><i class="fa-solid fa-industry fa-2x text-warning"></i></div>
+              <h5>Pengelolaan Limbah</h5>
+              <ul class="small mb-0">
+                <li>Limbah B3 & Non‑B3, Neraca Limbah</li>
+                <li>Pelaporan dan pendampingan</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="140">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <div class="mb-3"><i class="fa-solid fa-clipboard-check fa-2x text-info"></i></div>
+              <h5>Pemantauan & Audit Lingkungan</h5>
+              <ul class="small mb-0">
+                <li>Monitoring air, udara, emisi, kebisingan</li>
+                <li>Audit kepatuhan lingkungan</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="170">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <div class="mb-3"><i class="fa-solid fa-vials fa-2x text-primary"></i></div>
+              <h5>Jasa Laboratorium</h5>
+              <ul class="small mb-0">
+                <li>Uji air, limbah, tanah, udara, emisi</li>
+                <li>Sampling dan analisis lingkungan</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <div class="mb-3"><i class="fa-solid fa-mountain-sun fa-2x text-success"></i></div>
+              <h5>Pemetaan & GIS</h5>
+              <ul class="small mb-0">
+                <li>Drone mapping, GIS, topografi</li>
+                <li>Analisis spasial & peta tematik</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- more grouped services condensed for brevity -->
+        <div class="col-12 mt-3 text-center">
+          <a href="/layanan.html" class="btn btn-outline-primary">Lihat Semua Layanan</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- SERVICES -->
+  <!-- WHY CHOOSE US -->
   <section class="py-5 bg-light">
     <div class="container" data-aos="fade-up">
-      <div class="d-flex justify-content-between align-items-center mb-4">
-        <h3 class="mb-0">Layanan Kami</h3>
-        <a href="/layanan.html" class="small">Lihat Semua &raquo;</a>
-      </div>
-      <div class="row g-3">
-        <!-- example card -->
-        <div class="col-md-4" data-aos="fade-up" data-aos-delay="50">
-          <div class="card h-100">
-            <div class="card-body">
-              <div class="icon-box mb-3"><i class="fa-solid fa-file-lines fa-2x text-success"></i></div>
-              <h5 class="card-title">Dokumen Persetujuan Lingkungan</h5>
-              <p class="card-text small">AMDAL, UKL-UPL, SPPL, dan dokumen terkait lingkungan.</p>
-            </div>
-          </div>
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <h3 class="fw-bold">Mengapa Memilih Kami</h3>
+          <ul class="list-unstyled">
+            <li class="mb-2"><i class="fa-solid fa-check text-success me-2"></i>Tim profesional dan berpengalaman</li>
+            <li class="mb-2"><i class="fa-solid fa-check text-success me-2"></i>Sesuai regulasi lingkungan terbaru</li>
+            <li class="mb-2"><i class="fa-solid fa-check text-success me-2"></i>Proses cepat, tepat, dan transparan</li>
+            <li class="mb-2"><i class="fa-solid fa-check text-success me-2"></i>Pendampingan hingga dokumen disetujui</li>
+            <li class="mb-2"><i class="fa-solid fa-check text-success me-2"></i>Layanan tersedia di seluruh Indonesia</li>
+          </ul>
+          <a href="/kontak.html" class="btn btn-success">Minta Penawaran</a>
         </div>
-        <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
-          <div class="card h-100">
-            <div class="card-body">
-              <div class="icon-box mb-3"><i class="fa-solid fa-vials fa-2x text-primary"></i></div>
-              <h5 class="card-title">Laboratorium & Uji</h5>
-              <p class="card-text small">Uji air, tanah, udara, emisi, dan analisis lingkungan.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4" data-aos="fade-up" data-aos-delay="150">
-          <div class="card h-100">
-            <div class="card-body">
-              <div class="icon-box mb-3"><i class="fa-solid fa-drone fa-2x text-info"></i></div>
-              <h5 class="card-title">GIS & Drone Mapping</h5>
-              <p class="card-text small">Drone mapping, topografi, peta tematik, dan analisis spasial.</p>
-            </div>
-          </div>
+        <div class="col-lg-6 text-lg-end mt-4 mt-lg-0">
+          <img src="/assets/images/og-image.jpg" alt="Tim dan layanan" class="img-fluid rounded shadow-sm" loading="lazy" style="max-height:320px;">
         </div>
       </div>
     </div>
   </section>
 
-  <!-- CONTACT PROMO -->
-  <section id="contact" class="py-5">
+  <!-- CLIENTS -->
+  <section class="py-5">
     <div class="container" data-aos="fade-up">
-      <div class="row align-items-center">
-        <div class="col-md-8">
-          <h4>Siap berdiskusi?</h4>
-          <p class="mb-0">Hubungi kami untuk konsultasi cepat dan penawaran layanan.</p>
-        </div>
-        <div class="col-md-4 text-md-end mt-3 mt-md-0">
-          <a href="tel:+6287877836080" class="btn btn-success me-2"><i class="fa fa-phone"></i> +62 878-7783-6080</a>
-          <a href="mailto:info@javasindonesia.co.id" class="btn btn-outline-secondary">Email</a>
-        </div>
+      <div class="text-center mb-4"><h4 class="fw-bold">Klien yang Kami Layani</h4><p class="text-muted">Pemerintah, BUMN, industri, UMKM, dan lembaga lainnya</p></div>
+      <div class="row g-3 align-items-center justify-content-center">
+        <div class="col-6 col-md-2 text-center"><img src="/assets/images/portfolio-1.jpg" alt="client" class="img-fluid rounded" loading="lazy"></div>
+        <div class="col-6 col-md-2 text-center"><img src="/assets/images/portfolio-2.jpg" alt="client" class="img-fluid rounded" loading="lazy"></div>
+        <div class="col-6 col-md-2 text-center"><img src="/assets/images/portfolio-3.jpg" alt="client" class="img-fluid rounded" loading="lazy"></div>
       </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-5 bg-dark text-white">
+    <div class="container text-center" data-aos="fade-up">
+      <h3 class="fw-bold">Siap Mulai Proyek Anda?</h3>
+      <p class="mb-3">Hubungi tim kami untuk konsultasi dan penawaran cepat.</p>
+      <a href="tel:+6287877836080" class="btn btn-success btn-lg me-2">📞 +62 878-7783-6080</a>
+      <a href="/kontak.html" class="btn btn-outline-light btn-lg">Hubungi Kami</a>
     </div>
   </section>
 
   <!-- FOOTER -->
-  <footer class="py-4 bg-dark text-white">
+  <footer class="py-4 bg-white border-top">
     <div class="container">
       <div class="row">
-        <div class="col-md-4">
-          <h5>JAVAS INDO</h5>
-          <p>Solusi Profesional untuk Lingkungan yang Berkelanjutan.</p>
+        <div class="col-md-6">
+          <h6 class="fw-bold">CV. JAVAS INDONESIA KONSULTAN</h6>
+          <p class="small text-muted mb-1">Solusi Profesional untuk Lingkungan yang Berkelanjutan</p>
+          <p class="small mb-0">📞 +62 878-7783-6080 • ✉ info@javasindonesia.co.id</p>
         </div>
-        <div class="col-md-4">
-          <h6>Menu</h6>
-          <ul class="list-unstyled small">
-            <li><a class="text-white" href="/">Beranda</a></li>
-            <li><a class="text-white" href="/layanan.html">Layanan</a></li>
-            <li><a class="text-white" href="/portofolio.html">Portofolio</a></li>
+        <div class="col-md-6 text-md-end">
+          <ul class="list-inline mb-0">
+            <li class="list-inline-item"><a href="/" class="text-muted">Beranda</a></li>
+            <li class="list-inline-item"><a href="/layanan.html" class="text-muted">Layanan</a></li>
+            <li class="list-inline-item"><a href="/kontak.html" class="text-muted">Kontak</a></li>
           </ul>
-        </div>
-        <div class="col-md-4">
-          <h6>Kontak</h6>
-          <p class="small mb-0">📞 +62 878-7783-6080<br>✉ info@javasindonesia.co.id<br>Senin–Jumat 08.00–17.00 WIB</p>
+          <div class="mt-2 small text-muted">© 2026 CV. JAVAS INDONESIA KONSULTAN</div>
         </div>
       </div>
-      <div class="text-center mt-3 small">© 2026 CV. JAVAS INDONESIA KONSULTAN</div>
     </div>
   </footer>
 
@@ -204,7 +261,7 @@
     <i class="fa-brands fa-whatsapp"></i>
   </a>
 
-  <a href="#top" id="backToTop" class="back-to-top" aria-label="Back to top"><i class="fa fa-chevron-up"></i></a>
+  <a href="#home" id="backToTop" class="back-to-top" aria-label="Back to top"><i class="fa fa-chevron-up"></i></a>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
