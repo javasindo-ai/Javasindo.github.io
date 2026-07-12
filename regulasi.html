@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Regulasi — JAVAS INDO</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <main class="container py-5">
+    <h1>Regulasi</h1>
+    <p>Database regulasi: UU, PP, Permen LHK, Kepmen, SOP. Gunakan pencarian cepat (client-side) untuk demo.</p>
+    <input id="regSearch" class="form-control mb-3" placeholder="Cari regulasi...">
+    <ul id="regList" class="list-group">
+      <li class="list-group-item">UU No. XX Tahun YYYY — Contoh Regulasi</li>
+      <li class="list-group-item">PP No. XX Tahun YYYY — Contoh Regulasi</li>
+    </ul>
+  </main>
+  <script>
+    document.getElementById('regSearch').addEventListener('input', function(e){
+      const q = e.target.value.toLowerCase();
+      [...document.querySelectorAll('#regList li')].forEach(li=>{
+        li.style.display = li.textContent.toLowerCase().includes(q) ? '' : 'none';
+      });
+    });
+  </script>
+</body>
+</html>
