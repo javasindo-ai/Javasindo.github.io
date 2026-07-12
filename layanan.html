@@ -10,7 +10,7 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
   <link rel="stylesheet" href="/assets/css/style.css">
 
-  <!-- Schema.org: Organization + Service list -->
+  <!-- Schema.org: Organization + Service list (enriched) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -20,79 +20,104 @@
         "name": "CV. JAVAS INDONESIA KONSULTAN",
         "url": "https://javasindo-ai.github.io/",
         "logo": "https://javasindo-ai.github.io/assets/images/logo.png",
-        "contactPoint": [{"@type":"ContactPoint","telephone":"+62 878-7783-6080","contactType":"customer service","areaServed":"ID"}]
+        "contactPoint": [{"@type":"ContactPoint","telephone":"+62 878-7783-6080","contactType":"customer service","areaServed":"ID"}],
+        "sameAs": []
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type":"ListItem","position":1,"name":"Beranda","item":"https://javasindo-ai.github.io/"},
+          {"@type":"ListItem","position":2,"name":"Layanan","item":"https://javasindo-ai.github.io/layanan.html"}
+        ]
       },
       {
         "@type": "Service",
         "name": "Dokumen Persetujuan Lingkungan",
         "serviceType": "AMDAL, UKL-UPL, SPPL, DELH, DPLH",
-        "description": "Penyusunan dokumen AMDAL, UKL-UPL, SPPL, dokumen DELH/DPLH, dan persetujuan teknis lingkungan sesuai peraturan nasional."
+        "description": "Penyusunan dokumen AMDAL, UKL-UPL, SPPL, dokumen DELH/DPLH, dan persetujuan teknis lingkungan sesuai peraturan nasional.",
+        "serviceArea": {"@type":"Place","name":"Indonesia"},
+        "audience": {"@type":"Audience","audienceType":"Pemerintah, Industri, Perusahaan"},
+        "provider": {"@type":"Organization","name":"CV. JAVAS INDONESIA KONSULTAN"},
+        "potentialAction": {"@type":"AssessAction","target":"/kontak.html"}
       },
       {
         "@type": "Service",
         "name": "Perizinan Berusaha Berbasis Risiko",
         "serviceType": "OSS-RBA, NIB, Sinkronisasi Perizinan",
-        "description": "Pendampingan OSS-RBA, penerbitan NIB, sinkronisasi izin usaha dan perizinan sektor lingkungan."
+        "description": "Pendampingan OSS-RBA, penerbitan NIB, sinkronisasi izin usaha dan perizinan sektor lingkungan.",
+        "serviceArea": {"@type":"Place","name":"Indonesia"},
+        "audience": {"@type":"Audience","audienceType":"Pelaku usaha, Konsultan"},
+        "provider": {"@type":"Organization","name":"CV. JAVAS INDONESIA KONSULTAN"}
       },
       {
         "@type": "Service",
         "name": "Pengelolaan Limbah",
         "serviceType": "Limbah B3, Limbah Non-B3, Neraca Limbah",
-        "description": "Perencanaan dan pendampingan pengelolaan limbah B3 dan non-B3, pembuatan neraca limbah, serta pelaporan lingkungan."
+        "description": "Perencanaan dan pendampingan pengelolaan limbah B3 dan non-B3, pembuatan neraca limbah, serta pelaporan lingkungan.",
+        "serviceArea": {"@type":"Place","name":"Indonesia"}
       },
       {
         "@type": "Service",
         "name": "Pemantauan dan Audit Lingkungan",
         "serviceType": "Monitoring air, udara, emisi, kebisingan, audit kepatuhan",
-        "description": "Layanan monitoring kualitas lingkungan (air, udara, emisi, kebisingan) dan audit kepatuhan lingkungan."
+        "description": "Layanan monitoring kualitas lingkungan (air, udara, emisi, kebisingan) dan audit kepatuhan lingkungan.",
+        "serviceArea": {"@type":"Place","name":"Indonesia"}
       },
       {
         "@type": "Service",
         "name": "Jasa Laboratorium",
         "serviceType": "Uji air, uji tanah, uji udara, uji emisi",
-        "description": "Pelayanan pengujian laboratorium untuk air, air limbah, tanah, udara ambien, emisi, dan kebisingan, lengkap dengan sampling dan laporan analitis."
+        "description": "Pelayanan pengujian laboratorium untuk air, air limbah, tanah, udara ambien, emisi, dan kebisingan, lengkap dengan sampling dan laporan analitis.",
+        "serviceArea": {"@type":"Place","name":"Indonesia"}
       },
       {
         "@type": "Service",
         "name": "Pemetaan dan GIS",
         "serviceType": "Drone mapping, GIS, topografi, peta tematik",
-        "description": "Pemetaan menggunakan drone, analisis GIS dan spasial, topografi, dan pembuatan peta tematik untuk kebutuhan studi dan izin."
+        "description": "Pemetaan menggunakan drone, analisis GIS dan spasial, topografi, dan pembuatan peta tematik untuk kebutuhan studi dan izin.",
+        "serviceArea": {"@type":"Place","name":"Indonesia"}
       },
       {
         "@type": "Service",
-        "name": "Kajian Teknis",
+        "name": "Kajian Teknis & Feasibility Study",
         "serviceType": "Kajian lingkungan, daya dukung, risiko, FS",
-        "description": "Kajian lingkungan hidup, daya dukung, kajian risiko, kajian teknis pembangunan, serta studi kelayakan (Feasibility Study)."
+        "description": "Kajian lingkungan hidup, daya dukung, kajian risiko, kajian teknis pembangunan, serta studi kelayakan (Feasibility Study).",
+        "serviceArea": {"@type":"Place","name":"Indonesia"}
       },
       {
         "@type": "Service",
         "name": "CSR & ESG",
         "serviceType": "Program CSR, laporan keberlanjutan, pendampingan PROPER",
-        "description": "Penyusunan program CSR, laporan keberlanjutan (sustainability report), implementasi ESG, dan pendampingan PROPER."
+        "description": "Penyusunan program CSR, laporan keberlanjutan (sustainability report), implementasi ESG, dan pendampingan PROPER.",
+        "serviceArea": {"@type":"Place","name":"Indonesia"}
       },
       {
         "@type": "Service",
         "name": "Pelatihan dan Pendampingan",
         "serviceType": "Pelatihan pengelolaan lingkungan, K3, workshop regulasi",
-        "description": "Pelatihan untuk pengelolaan lingkungan, penyusunan dokumen, K3 lingkungan, dan workshop regulasi bagi instansi dan korporasi."
+        "description": "Pelatihan untuk pengelolaan lingkungan, penyusunan dokumen, K3 lingkungan, dan workshop regulasi bagi instansi dan korporasi.",
+        "serviceArea": {"@type":"Place","name":"Indonesia"}
       },
       {
         "@type": "Service",
-        "name": "Konsultasi Kehutanan dan Pertambangan",
+        "name": "Konsultasi Kehutanan & Pertambangan",
         "serviceType": "Persetujuan kawasan hutan, reklamasi, pascatambang",
-        "description": "Pendampingan persetujuan penggunaan kawasan hutan, dokumen lingkungan untuk pertambangan, reklamasi dan pascatambang."
+        "description": "Pendampingan persetujuan penggunaan kawasan hutan, dokumen lingkungan untuk pertambangan, reklamasi dan pascatambang.",
+        "serviceArea": {"@type":"Place","name":"Indonesia"}
       },
       {
         "@type": "Service",
         "name": "Energi Terbarukan",
         "serviceType": "Kajian PLTS, biomassa, audit energi",
-        "description": "Kajian dan pendampingan pengembangan PLTS, kajian biomassa, efisiensi energi, serta audit energi untuk proyek hijau."
+        "description": "Kajian dan pendampingan pengembangan PLTS, kajian biomassa, efisiensi energi, serta audit energi untuk proyek hijau.",
+        "serviceArea": {"@type":"Place","name":"Indonesia"}
       },
       {
         "@type": "Service",
         "name": "Konsultasi Perubahan Iklim",
         "serviceType": "Inventarisasi emisi, carbon footprint, net-zero",
-        "description": "Inventarisasi emisi GRK, perhitungan jejak karbon (carbon footprint), strategi Net Zero Emission, dan program adaptasi & mitigasi."
+        "description": "Inventarisasi emisi GRK, perhitungan jejak karbon (carbon footprint), strategi Net Zero Emission, dan program adaptasi & mitigasi.",
+        "serviceArea": {"@type":"Place","name":"Indonesia"}
       }
     ]
   }
@@ -117,6 +142,13 @@
   </nav>
 
   <main class="container py-5">
+    <nav aria-label="Breadcrumb" class="mb-3" data-aos="fade-up">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/">Beranda</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Layanan</li>
+      </ol>
+    </nav>
+
     <header class="mb-4" data-aos="fade-up">
       <h1 class="fw-bold">Layanan Lengkap</h1>
       <p class="text-muted">Rincian layanan yang kami sediakan untuk mendukung kepatuhan lingkungan, perizinan, dan keberlanjutan di seluruh Indonesia.</p>
@@ -145,6 +177,15 @@
               </ul>
             </div>
           </div>
+
+          <div class="card mt-3 shadow-sm">
+            <div class="card-body">
+              <h6 class="fw-bold">Butuh bantuan cepat?</h6>
+              <p class="small text-muted mb-2">Hubungi kami langsung:</p>
+              <a href="tel:+6287877836080" class="btn btn-success w-100 mb-2">📞 +62 878-7783-6080</a>
+              <a href="mailto:info@javasindonesia.co.id" class="btn btn-outline-secondary w-100">✉ Email</a>
+            </div>
+          </div>
         </div>
       </aside>
 
@@ -159,6 +200,10 @@
             <li><strong>SPPL:</strong> Dokumen pernyataan pengelolaan lingkungan untuk usaha kecil dan menengah.</li>
             <li><strong>DELH / DPLH & Persetujuan Teknis:</strong> Dokumen lingkungan lanjutan dan koordinasi dengan instansi teknis.</li>
           </ul>
+          <div class="d-flex gap-2 mt-3">
+            <button class="btn btn-primary request-btn" data-service="Dokumen Persetujuan Lingkungan">Minta Penawaran</button>
+            <a href="/portofolio.html#AMDAL" class="btn btn-outline-secondary">Lihat Portofolio Terkait</a>
+          </div>
         </article>
 
         <!-- 2 -->
@@ -170,6 +215,10 @@
             <li>Penerbitan NIB dan izin usaha sektoral.</li>
             <li>Sinkronisasi perizinan dengan persyaratan lingkungan.</li>
           </ul>
+          <div class="d-flex gap-2 mt-3">
+            <button class="btn btn-primary request-btn" data-service="Perizinan Berusaha Berbasis Risiko">Minta Penawaran</button>
+            <a href="/portofolio.html#Perizinan" class="btn btn-outline-secondary">Lihat Portofolio Terkait</a>
+          </div>
         </article>
 
         <!-- 3 -->
@@ -181,6 +230,10 @@
             <li>Manajemen limbah non‑B3 dan desain alur limbah.</li>
             <li>Penyusunan neraca limbah dan pelaporan berkala sesuai aturan.</li>
           </ul>
+          <div class="d-flex gap-2 mt-3">
+            <button class="btn btn-primary request-btn" data-service="Pengelolaan Limbah">Minta Penawaran</button>
+            <a href="/portofolio.html#Limbah" class="btn btn-outline-secondary">Lihat Portofolio Terkait</a>
+          </div>
         </article>
 
         <!-- 4 -->
@@ -193,6 +246,10 @@
             <li>Monitoring kebisingan dan dampak akustik.</li>
             <li>Audit kepatuhan lingkungan dan rekomendasi perbaikan.</li>
           </ul>
+          <div class="d-flex gap-2 mt-3">
+            <button class="btn btn-primary request-btn" data-service="Pemantauan & Audit Lingkungan">Minta Penawaran</button>
+            <a href="/portofolio.html#Audit" class="btn btn-outline-secondary">Lihat Portofolio Terkait</a>
+          </div>
         </article>
 
         <!-- 5 -->
@@ -206,6 +263,10 @@
             <li>Uji udara ambien, emisi, dan kebisingan.</li>
             <li>Sampling lingkungan dan chain of custody.</li>
           </ul>
+          <div class="d-flex gap-2 mt-3">
+            <button class="btn btn-primary request-btn" data-service="Jasa Laboratorium">Minta Penawaran</button>
+            <a href="/portofolio.html#Laboratorium" class="btn btn-outline-secondary">Lihat Portofolio Terkait</a>
+          </div>
         </article>
 
         <!-- 6 -->
@@ -217,6 +278,10 @@
             <li>Analisis GIS: tumpang tindih, zonasi, dan buffer analisis.</li>
             <li>Peta topografi dan peta tematik untuk dokumen AMDAL dan perizinan.</li>
           </ul>
+          <div class="d-flex gap-2 mt-3">
+            <button class="btn btn-primary request-btn" data-service="Pemetaan & GIS">Minta Penawaran</button>
+            <a href="/portofolio.html#GIS" class="btn btn-outline-secondary">Lihat Portofolio Terkait</a>
+          </div>
         </article>
 
         <!-- 7 -->
@@ -228,6 +293,10 @@
             <li>Analisis risiko lingkungan dan mitigasi.</li>
             <li>Feasibility Study (FS) untuk investasi dan proyek pembangunan.</li>
           </ul>
+          <div class="d-flex gap-2 mt-3">
+            <button class="btn btn-primary request-btn" data-service="Kajian Teknis & FS">Minta Penawaran</button>
+            <a href="/portofolio.html#Kajian" class="btn btn-outline-secondary">Lihat Portofolio Terkait</a>
+          </div>
         </article>
 
         <!-- 8 -->
@@ -239,6 +308,10 @@
             <li>Penyusunan sustainability report dan pengukuran dampak.</li>
             <li>Implementasi kebijakan ESG dan pendampingan PROPER.</li>
           </ul>
+          <div class="d-flex gap-2 mt-3">
+            <button class="btn btn-primary request-btn" data-service="CSR & ESG">Minta Penawaran</button>
+            <a href="/portofolio.html#ESG" class="btn btn-outline-secondary">Lihat Portofolio Terkait</a>
+          </div>
         </article>
 
         <!-- 9 -->
@@ -250,6 +323,10 @@
             <li>Workshop regulasi dan penyusunan dokumen lingkungan.</li>
             <li>Pendampingan teknis untuk implementasi program.</li>
           </ul>
+          <div class="d-flex gap-2 mt-3">
+            <button class="btn btn-primary request-btn" data-service="Pelatihan & Pendampingan">Minta Penawaran</button>
+            <a href="/portofolio.html#Pelatihan" class="btn btn-outline-secondary">Lihat Portofolio Terkait</a>
+          </div>
         </article>
 
         <!-- 10 -->
@@ -261,6 +338,10 @@
             <li>Dokumen lingkungan untuk kegiatan pertambangan dan reklamasi.</li>
             <li>Pendampingan perencanaan pascatambang dan restorasi.</li>
           </ul>
+          <div class="d-flex gap-2 mt-3">
+            <button class="btn btn-primary request-btn" data-service="Konsultasi Kehutanan & Pertambangan">Minta Penawaran</button>
+            <a href="/portofolio.html#Kehutanan" class="btn btn-outline-secondary">Lihat Portofolio Terkait</a>
+          </div>
         </article>
 
         <!-- 11 -->
@@ -272,6 +353,10 @@
             <li>Kajian biomassa dan potensi energi terbarukan lainnya.</li>
             <li>Audit energi dan program efisiensi energi untuk industri.</li>
           </ul>
+          <div class="d-flex gap-2 mt-3">
+            <button class="btn btn-primary request-btn" data-service="Energi Terbarukan">Minta Penawaran</button>
+            <a href="/portofolio.html#Energi" class="btn btn-outline-secondary">Lihat Portofolio Terkait</a>
+          </div>
         </article>
 
         <!-- 12 -->
@@ -283,6 +368,10 @@
             <li>Perhitungan carbon footprint dan rekomendasi pengurangan emisi.</li>
             <li>Penyusunan strategi Net Zero dan program adaptasi & mitigasi.</li>
           </ul>
+          <div class="d-flex gap-2 mt-3">
+            <button class="btn btn-primary request-btn" data-service="Konsultasi Perubahan Iklim">Minta Penawaran</button>
+            <a href="/portofolio.html#PerubahanIklim" class="btn btn-outline-secondary">Lihat Portofolio Terkait</a>
+          </div>
         </article>
 
         <div class="mt-4">
@@ -293,8 +382,105 @@
     </div>
   </main>
 
+  <!-- Request modal -->
+  <div class="modal fade" id="requestModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Minta Penawaran</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <form id="requestForm">
+          <div class="modal-body">
+            <input type="hidden" name="service" id="reqService">
+            <div class="mb-3">
+              <label class="form-label">Nama</label>
+              <input type="text" name="name" class="form-control" required>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Perusahaan / Instansi</label>
+              <input type="text" name="company" class="form-control">
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Email</label>
+              <input type="email" name="email" class="form-control" required>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Telepon / WhatsApp</label>
+              <input type="tel" name="phone" class="form-control" required>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Pesan / Keterangan Singkat</label>
+              <textarea name="message" class="form-control" rows="3"></textarea>
+            </div>
+            <div id="reqFeedback" class="small text-success" style="display:none">Mengirim…</div>
+          </div>
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-success">Kirim Permintaan</button>
+            <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Tutup</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-  <script>if(window.AOS) AOS.init({duration:700,once:true});</script>
+  <script>
+    if(window.AOS) AOS.init({duration:700,once:true});
+
+    // Modal and form handling: supports Formspree endpoint or Google Apps Script
+    (function(){
+      const modalEl = document.getElementById('requestModal');
+      const reqForm = document.getElementById('requestForm');
+      const reqService = document.getElementById('reqService');
+      const feedback = document.getElementById('reqFeedback');
+      const modal = new bootstrap.Modal(modalEl);
+
+      // configure endpoints
+      const FORMSPREE_ENDPOINT = 'https://formspree.io/f/YOUR_FORM_ID'; // replace with your Formspree form ID
+      const GOOGLE_SCRIPT_URL = ''; // optional: replace with your Google Apps Script web app URL
+
+      document.querySelectorAll('.request-btn').forEach(btn=>{
+        btn.addEventListener('click', ()=>{
+          const svc = btn.getAttribute('data-service') || 'Layanan';
+          reqService.value = svc;
+          modal.show();
+        });
+      });
+
+      reqForm.addEventListener('submit', function(e){
+        e.preventDefault();
+        feedback.style.display = '';
+        feedback.textContent = 'Mengirim…';
+        const formData = new FormData(reqForm);
+        const json = {};
+        formData.forEach((v,k)=> json[k]=v);
+
+        // Prefer Google Script if provided
+        if(GOOGLE_SCRIPT_URL){
+          fetch(GOOGLE_SCRIPT_URL, {method:'POST',mode:'no-cors',body:formData})
+            .then(()=>{ feedback.textContent='Permintaan terkirim. Kami akan menghubungi Anda.'; setTimeout(()=>modal.hide(),1500); reqForm.reset(); })
+            .catch(()=>{ feedback.textContent='Terjadi kesalahan. Silakan hubungi via WhatsApp.'; });
+          return;
+        }
+
+        // Fallback to Formspree
+        fetch(FORMSPREE_ENDPOINT, {method:'POST',headers:{'Accept':'application/json'},body: formData})
+          .then(r=> r.json())
+          .then(data=>{
+            if(data.ok || data.success){
+              feedback.textContent='Permintaan terkirim. Kami akan menghubungi Anda.';
+              setTimeout(()=>modal.hide(),1500);
+              reqForm.reset();
+            } else {
+              feedback.textContent='Terjadi kesalahan. Silakan coba lagi atau hubungi via WhatsApp.';
+            }
+          }).catch(()=>{
+            feedback.textContent='Terjadi kesalahan. Silakan hubungi via WhatsApp.';
+          });
+      });
+    })();
+  </script>
 </body>
 </html>
